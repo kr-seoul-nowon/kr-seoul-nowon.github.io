@@ -117,35 +117,311 @@
   ]
 }
   </script>
-  <style>
-:root { --fg:#1a1a2e; --muted:#5c5c72; --accent:#2d5bff; --bg:#ffffff; --card:#f6f7fb; --line:#e6e8f0; }
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--fg); background:var(--bg); line-height:1.7; }
-main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-header { padding: 2rem 0 1rem; border-bottom: 2px solid var(--line); margin-bottom: 1.5rem; }
-.eyebrow { color: var(--accent); font-weight: 600; margin: 0 0 .25rem; letter-spacing: .02em; }
-h1 { font-size: 2.4rem; margin: 0; }
-h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--accent); }
-section p { margin: .25rem 0 0; }
-ul { margin: .5rem 0 0; padding-left: 1.2rem; }
-li { margin: .25rem 0; }
-.facts, .symbols { list-style: none; padding: 1rem 1.2rem; background: var(--card); border-radius: 12px; }
-.faq details { border: 1px solid var(--line); border-radius: 10px; padding: .5rem .9rem; margin: .5rem 0; }
-.faq summary { cursor: pointer; font-weight: 600; }
-.faq details p { margin: .5rem 0 .25rem; color: var(--muted); }
-.sources { font-size: .9rem; color: var(--muted); }
-a { color: var(--accent); }
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
-</style>
+  <script id="region-data" type="application/json">
+{
+  "characteristics": "노원구는 약 48만 명이 거주하는 서울에서도 손꼽히는 인구 밀집 주거도시로, 아파트 단지 비중이 매우 높은 정주형 생활권을 형성하고 있습니다. 뚜렷한 대규모 산업단지 없이 주거와 교육, 근린 상업이 도시 성격을 규정하며, 대형마트와 백화점, 영화관이 몰린 노원역 일대가 동북권의 상업 중심지 구실을 합니다. 무엇보다 서울과학기술대·광운대·서울여대·삼육대·한국성서대·육군사관학교 등 여섯 곳이 넘는 대학이 모여 있어 대학생 인구와 학원가가 두터운 교육특화 지역으로 이름 높습니다. 젊은 세대와 학군 수요가 꾸준히 유입되어 사교육 밀집도가 높고, 중계동 은행사거리는 서울 동북권을 대표하는 학원가로 통합니다. 산과 하천이 가까워 여가와 정주 여건이 좋은 점도 노원구만의 뚜렷한 매력입니다.",
+  "coords": {
+    "lat": 37.6542,
+    "lng": 127.0568
+  },
+  "cultural_heritage": [
+    {
+      "description": "공릉동에 자리한 태릉은 조선 중종의 계비 문정왕후의 능, 인근 강릉은 아들 명종과 인순왕후의 능입니다. 조선왕릉의 하나로 2009년 유네스코 세계유산에 등재된 왕실 유적으로, 울창한 능림 산책로가 함께 조성되어 있습니다.",
+      "name": "태릉·강릉(조선왕릉·유네스코 세계유산)"
+    },
+    {
+      "description": "공릉동에 위치한 국가대표 종합훈련장으로, 오랜 세월 한국 스포츠 국가대표의 산실 역할을 해 온 상징적 시설입니다. 인근에 태릉국제스케이트장과 사격장이 함께 자리합니다.",
+      "name": "태릉선수촌"
+    },
+    {
+      "description": "중계동에 있는 지하 3층·지상 6층 규모의 종합 문화예술시설로, 2004년 개관해 대·소공연장과 전시실, 야외무대를 갖추고 있습니다. 노원문화재단이 운영하며 지역 공연·전시의 거점 역할을 합니다.",
+      "name": "노원문화예술회관"
+    },
+    {
+      "description": "불암산 자락에 남아 있는 옛 산성 터로, 삼국시대 이후 축조된 것으로 전해지는 서울시 기념물입니다. 등산로와 이어져 있어 역사 탐방과 산행을 겸할 수 있습니다.",
+      "name": "불암산성"
+    }
+  ],
+  "faq": [
+    {
+      "answer": "갈대(蘆)가 무성한 들판(原)이라는 뜻에서 비롯되었다는 설과, 길손이 묵던 원(院)이 있던 데서 유래했다는 설이 함께 전해집니다.",
+      "question": "노원구라는 이름은 어디에서 유래했나요?"
+    },
+    {
+      "answer": "1988년 1월 1일 도봉구에서 분리되어 독립 자치구로 출범했으며, 1989년 현재의 다섯 개 법정동 경계가 확정되었습니다.",
+      "question": "노원구는 언제 독립 자치구가 되었나요?"
+    },
+    {
+      "answer": "불암산(508m)과 수락산(638m)이 대표적이며, 서울둘레길 첫 구간이 두 산자락을 따라 이어져 있어 도심 근교 산행지로 인기가 높습니다.",
+      "question": "노원구에서 등산하기 좋은 산은 어디인가요?"
+    },
+    {
+      "answer": "공릉동에 있는 조선왕릉으로 태릉은 중종의 계비 문정왕후, 강릉은 명종과 인순왕후의 능이며, 2009년 유네스코 세계유산으로 등재되었습니다.",
+      "question": "태릉과 강릉은 어떤 곳인가요?"
+    },
+    {
+      "answer": "옛 경춘선 폐철길과 화랑대역 부지를 공원으로 되살린 산책 명소로, 밤이면 서울 최초의 불빛정원이 조명으로 빛나 야경 명소로도 유명합니다.",
+      "question": "경춘선숲길과 노원불빛정원은 무엇인가요?"
+    },
+    {
+      "answer": "서울과학기술대·광운대·서울여대·삼육대·한국성서대와 육군사관학교가 모여 있어 서울에서도 손꼽히는 교육특화 지역입니다.",
+      "question": "노원구에는 어떤 대학교가 있나요?"
+    }
+  ],
+  "geography_nature": "노원구는 서울 동북쪽 끝에 자리해 북으로 의정부시, 동으로 구리시·남양주시, 서로 도봉구와 맞닿아 서울과 경기를 잇는 관문 역할을 합니다. 동쪽 경계를 따라 불암산(508m)과 수락산(638m)의 화강암 봉우리가 솟아 있어 구 전체 면적의 상당 부분이 산지로 이루어져 있습니다. 두 산에서 흘러내린 물길은 당현천으로 모여 상계동과 중계동 사이를 가로지른 뒤, 구의 서쪽을 남북으로 관통하는 중랑천에 합류합니다. 산지와 하천 사이의 저지대에는 넓은 충적 평지가 펼쳐져 대규모 주거 단지가 들어섰습니다. 화강암 암반이 드러난 수락산 능선과 불암산 정상부는 도심에서 보기 드문 바위 절경을 이루며, 서울둘레길 첫 구간이 이 산자락을 따라 놓여 있습니다. 전체 면적은 약 35.44㎢로 서울시의 5.85%를 차지합니다.",
+  "history": "노원이라는 이름은 갈대가 우거진 들판에서 비롯되었다는 설과, 한양을 오가는 길손을 위한 원(院·역참 숙소)이 있던 데서 유래했다는 설이 함께 전해집니다. 조선시대에는 양주목에 속한 한적한 농촌 지역이었고, 태릉과 강릉 등 왕실 능이 들어서면서 능을 지키는 마을들이 형성되었습니다. 1963년 서울특별시로 편입된 뒤 오랫동안 성북구와 도봉구의 변두리에 머물렀습니다. 1980년대 상계·중계 지구가 대규모 아파트 단지로 개발되면서 인구가 급증했고, 이를 배경으로 1988년 1월 1일 도봉구에서 분리되어 독립 자치구로 출범했습니다. 1989년 창동·도봉동이 도봉구로 재편입되며 현재의 다섯 개 법정동 경계가 확정되었고, 이후 지하철 4·7호선 개통과 함께 서울 동북권의 대표적 주거 밀집지로 성장했습니다.",
+  "intro": "노원구는 불암산과 수락산이 병풍처럼 감싸 안은 서울 동북단의 자치구로, 갈대(蘆)가 무성했던 벌판(原)이라는 옛 지명을 그대로 이름에 새기고 있습니다. 상계·중계·하계·공릉·월계 다섯 개 법정동으로 이루어져 있으며, 1980년대 대규모 택지개발로 조성된 상계 신시가지가 구의 골격을 이룹니다. 서울과학기술대학교와 광운대학교, 서울여자대학교, 삼육대학교 등 여러 대학과 육군사관학교가 몰려 있어 교육과 학문의 색채가 짙은 고장이기도 합니다. 조선 명종의 어머니 문정왕후가 잠든 태릉이 자리해 왕실의 역사가 흐르는 한편, 폐선을 되살린 경춘선숲길과 화랑대 철도공원이 도심 속 산책 명소로 사랑받습니다. 아파트 단지와 산자락 녹지, 하천 산책로가 어우러져 정주형 주거도시의 편안함을 지닌 곳입니다.",
+  "landmarks": [
+    {
+      "description": "옛 경춘선 폐철길을 되살려 조성한 선형 공원으로, 월계동에서 서울·구리 경계 담터마을까지 이어지는 산책·자전거길입니다. 철길 위를 걸으며 옛 간이역과 화단, 카페 골목을 지나는 도심 속 힐링 명소로 사랑받습니다.",
+      "name": "경춘선숲길"
+    },
+    {
+      "description": "1939년 문을 연 옛 화랑대역(구 태릉역)을 철도 테마공원으로 꾸민 곳으로, 국내외 옛 기차와 전차가 전시되어 있습니다. 해 질 무렵이면 불빛터널·은하수정원 등 서울 최초의 불빛정원이 밤을 밝혀 야경 명소로도 유명합니다.",
+      "name": "화랑대 철도공원과 노원불빛정원"
+    },
+    {
+      "description": "지하철 4·7호선이 교차하는 노원역 일대는 백화점·대형마트·영화관·먹자골목이 밀집한 서울 동북권 최대 규모의 상업 중심지입니다. 인근 대학가와 어우러져 젊은 층이 즐겨 찾는 번화가를 이룹니다.",
+      "name": "노원역 상권"
+    },
+    {
+      "description": "중계동에 형성된 학원 밀집 지역으로, 서울 강북권을 대표하는 사교육 중심지이자 학군 수요의 상징적 장소입니다. 서점과 학원, 카페가 늘어서 저녁 시간에도 활기가 넘칩니다.",
+      "name": "중계동 은행사거리"
+    }
+  ],
+  "nature_rest": [
+    {
+      "description": "노원구와 남양주에 걸친 508m 높이의 화강암 산으로, 정상부의 바위 절경과 나비정원, 불암산성 등이 어우러진 도심 근교 명산입니다. 서울둘레길 수락·불암 구간이 능선을 따라 이어집니다.",
+      "name": "불암산"
+    },
+    {
+      "description": "상계동 북쪽에 솟은 638m의 산으로, 화강암 봉우리와 계곡이 아름다워 사계절 등산객이 즐겨 찾습니다. 마들능선길 등 여러 코스가 나 있어 서울 100대 명산으로 꼽힙니다.",
+      "name": "수락산"
+    },
+    {
+      "description": "수락산에서 발원해 상계동과 중계동 사이를 흘러 중랑천에 합류하는 지방하천으로, 물길을 따라 벚꽃길과 계절 꽃밭이 조성된 동네 산책 명소입니다. 봄이면 벚꽃음악회가 열립니다.",
+      "name": "당현천"
+    },
+    {
+      "description": "상계동 마들 지역에 조성된 근린공원으로, 넓은 잔디마당과 운동시설, 산책로를 갖춰 주민들의 일상 휴식처로 이용됩니다. 지하철 7호선 마들역과 가까워 접근성이 좋습니다.",
+      "name": "마들근린공원"
+    },
+    {
+      "description": "수락산과 불암산 자락을 잇는 서울둘레길의 첫 구간으로, 숲길과 능선 조망이 어우러진 대표적 도보 코스입니다. 도심에서 산림욕을 즐기려는 시민들이 꾸준히 찾습니다.",
+      "name": "서울둘레길 1구간(수락·불암산)"
+    }
+  ],
+  "org_slug": "kr-seoul-nowon",
+  "sido": "서울특별시",
+  "sigungu": "노원구",
+  "symbols": {
+    "bird": "산비둘기",
+    "flower": "산철쭉",
+    "tree": "은행나무"
+  },
+  "transport": "노원구는 지하철 4호선과 7호선이 교차하는 노원역을 중심으로 서울 동북권 교통의 결절점 역할을 합니다. 4호선은 상계역과 노원역을 지나 도심으로 이어지고, 7호선은 수락산·마들·노원·중계·하계·공릉역을 두루 거쳐 강남권까지 연결됩니다. 6호선 태릉입구역과 화랑대역, 그리고 1호선 광운대역·월계역이 구의 남서부를 통과해 철도 접근성이 매우 뛰어납니다. 도로로는 동부간선도로가 중랑천을 따라 남북을 잇고, 동일로와 노원로, 화랑로가 구내 주요 간선 역할을 합니다. 이들 축을 통해 도봉구·의정부·구리·남양주 등 인접 지역과의 광역 통행이 활발히 이루어집니다."
+}
+  </script>
 </head>
 <body>
-  <main>
-    <header>
-      <p class="eyebrow">서울특별시</p>
-      <h1>노원구</h1>
-    </header>
-    <div class="content">
-      <section id="intro">
+<div class="chalk-root">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Gaegu:wght@400;700&display=swap');
+
+    .chalk-root{
+      --board:#2E5D3A;
+      --board-2:#264d30;
+      --chalk:#FFFFFF;
+      --sky:#87CEEB;
+      --chalk-dim:rgba(255,255,255,.72);
+      --chalk-faint:rgba(255,255,255,.5);
+      --frame:#6b4a2a;
+      --frame-2:#8a6236;
+      font-family:'Gaegu','Cafe24 Anemone','Comic Sans MS',system-ui,sans-serif;
+      color:var(--chalk);
+      background:
+        radial-gradient(ellipse 120% 80% at 20% 0%, rgba(135,206,235,.06), transparent 60%),
+        radial-gradient(ellipse 100% 60% at 80% 100%, rgba(255,255,255,.04), transparent 60%),
+        var(--board);
+      background-color:var(--board);
+      position:relative;
+      overflow:hidden;
+      padding:clamp(16px,4vw,44px);
+      border:14px solid var(--frame);
+      border-radius:10px;
+      box-shadow:inset 0 0 0 3px var(--frame-2), inset 0 0 120px rgba(0,0,0,.35), 0 20px 50px rgba(0,0,0,.35);
+      line-height:1.65;
+    }
+    /* faint chalk dust / eraser smudges over the board */
+    .chalk-root::before{
+      content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+      background:
+        radial-gradient(circle at 15% 30%, rgba(255,255,255,.05) 0 22%, transparent 55%),
+        radial-gradient(circle at 78% 65%, rgba(255,255,255,.045) 0 18%, transparent 50%),
+        repeating-linear-gradient(115deg, rgba(255,255,255,.015) 0 2px, transparent 2px 7px);
+      mix-blend-mode:screen;opacity:.8;
+    }
+    .chalk-root>*{position:relative;z-index:1;}
+
+    .chalk-root a{color:var(--sky);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;}
+    .chalk-root a:hover{color:#bfeafd;}
+
+    /* ---------- hero: hand-drawn title with SVG stroke drawing ---------- */
+    .chalk-hero{text-align:center;margin:6px 0 30px;}
+    .chalk-eyebrow{
+      font-family:'Nanum Pen Script',cursive;font-size:clamp(20px,4.5vw,30px);
+      color:var(--sky);letter-spacing:.04em;margin-bottom:2px;transform:rotate(-1.2deg);
+    }
+    .chalk-title{
+      font-family:'Nanum Pen Script','Cafe24 Anemone',cursive;
+      font-size:clamp(38px,9vw,74px);line-height:1.02;margin:0;
+      text-shadow:0 0 1px rgba(255,255,255,.5), 1px 1px 0 rgba(0,0,0,.15);
+      transform:rotate(-.6deg);
+    }
+    .chalk-underline{display:block;margin:6px auto 0;width:min(560px,92%);height:34px;}
+    .chalk-underline path{
+      fill:none;stroke:var(--sky);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;
+      stroke-dasharray:var(--len);stroke-dashoffset:var(--len);
+      filter:drop-shadow(0 0 1px rgba(255,255,255,.4));
+    }
+    .drawn .chalk-underline path{animation:draw 1.5s ease-out .3s forwards;}
+    .chalk-subtitle{
+      font-family:'Nanum Pen Script',cursive;color:var(--chalk-dim);
+      font-size:clamp(17px,3.4vw,22px);margin-top:14px;transform:rotate(.4deg);
+    }
+
+    @keyframes draw{to{stroke-dashoffset:0;}}
+    @keyframes chalk-in{from{opacity:0;transform:translateY(14px) rotate(var(--tilt,-.4deg));}to{opacity:1;transform:translateY(0) rotate(var(--tilt,-.4deg));}}
+
+    /* ---------- little chalk doodles bar ---------- */
+    .chalk-doodles{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:0 0 28px;}
+    .chalk-doodles svg{width:clamp(48px,12vw,72px);height:clamp(48px,12vw,72px);}
+    .chalk-doodles path,.chalk-doodles circle,.chalk-doodles line{
+      fill:none;stroke:var(--chalk);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;
+      stroke-dasharray:var(--len);stroke-dashoffset:var(--len);
+    }
+    .drawn .chalk-doodles .d1{animation:draw 1.4s ease-out .5s forwards;}
+    .drawn .chalk-doodles .d2{animation:draw 1.4s ease-out .8s forwards;}
+    .drawn .chalk-doodles .d3{animation:draw 1.4s ease-out 1.1s forwards;}
+    .doodle-cap{display:block;text-align:center;font-family:'Nanum Pen Script',cursive;font-size:15px;color:var(--chalk-faint);margin-top:2px;}
+    .chalk-doodles figure{margin:0;}
+
+    /* ---------- content becomes chalk cards ---------- */
+    .chalk-content section{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:2.5px dashed rgba(255,255,255,.34);
+      border-radius:14px;
+      padding:clamp(16px,3vw,26px) clamp(16px,3.2vw,30px);
+      margin:0 0 22px;
+      position:relative;
+      box-shadow:inset 0 0 40px rgba(0,0,0,.12);
+      --tilt:-.35deg;
+      transform:rotate(var(--tilt));
+    }
+    .chalk-content section:nth-child(even){--tilt:.4deg;}
+    .chalk-content section:nth-child(3n){--tilt:-.6deg;}
+    .drawn .chalk-content section{animation:chalk-in .7s ease-out both;}
+
+    .chalk-content h2{
+      font-family:'Nanum Pen Script','Cafe24 Anemone',cursive;
+      font-size:clamp(26px,5.2vw,40px);line-height:1.1;
+      margin:0 0 12px;color:var(--chalk);
+      display:inline-block;position:relative;padding-bottom:6px;
+    }
+    /* chalk-drawn underline under every heading */
+    .chalk-content h2::after{
+      content:"";position:absolute;left:0;bottom:-2px;height:9px;width:100%;
+      background:
+        radial-gradient(circle at 10% 60%, var(--sky) 0 1px, transparent 2px),
+        repeating-linear-gradient(92deg, var(--sky) 0 10px, transparent 10px 15px);
+      -webkit-mask:repeating-linear-gradient(90deg,#000 0 10px, rgba(0,0,0,.5) 10px 16px);
+      mask:repeating-linear-gradient(90deg,#000 0 10px, rgba(0,0,0,.5) 10px 16px);
+      opacity:.9;border-radius:4px;
+      transform:scaleX(0);transform-origin:left;
+    }
+    .drawn .chalk-content section h2::after{animation:hdraw 1s ease-out .25s forwards;}
+    @keyframes hdraw{to{transform:scaleX(1);}}
+
+    .chalk-content p,.chalk-content li,.chalk-content dd,.chalk-content dt{
+      font-size:clamp(16px,2.6vw,18.5px);color:var(--chalk-dim);
+    }
+    .chalk-content p{margin:.5em 0;}
+    .chalk-content strong{color:var(--chalk);font-weight:700;}
+
+    /* facts / symbols as index-card style pinned notes */
+    .chalk-content .facts,.chalk-content .symbols{
+      list-style:none;padding:0;margin:.4em 0;
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;
+    }
+    .chalk-content .facts li,.chalk-content .symbols li{
+      background:rgba(135,206,235,.1);
+      border:2px dotted var(--sky);border-radius:10px;
+      padding:10px 14px;font-size:clamp(15px,2.4vw,17px);color:var(--chalk);
+    }
+    .chalk-content .facts dl,.chalk-content .symbols dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;}
+    .chalk-content dt{color:var(--sky);font-weight:700;}
+
+    /* faq: chalk detail/summary */
+    .chalk-content .faq details{
+      border:2px dashed rgba(135,206,235,.5);border-radius:10px;
+      padding:6px 16px;margin:10px 0;background:rgba(255,255,255,.03);
+    }
+    .chalk-content .faq summary{
+      cursor:pointer;list-style:none;font-family:'Nanum Pen Script',cursive;
+      font-size:clamp(19px,3.4vw,24px);color:var(--sky);padding:6px 0;
+      display:flex;align-items:center;gap:10px;
+    }
+    .chalk-content .faq summary::-webkit-details-marker{display:none;}
+    .chalk-content .faq summary::before{content:"✎";font-size:.9em;color:var(--chalk-faint);}
+    .chalk-content .faq details[open] summary::before{content:"✔";color:var(--sky);}
+
+    .chalk-content ul{padding-left:1.3em;}
+    .chalk-content a{word-break:break-word;}
+
+    .chalk-signoff{
+      text-align:center;margin:26px 0 4px;font-family:'Nanum Pen Script',cursive;
+      color:var(--chalk-faint);font-size:clamp(16px,3vw,20px);transform:rotate(-.8deg);
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      .chalk-root *{animation:none !important;}
+      .chalk-underline path,.chalk-doodles path,.chalk-doodles circle,.chalk-doodles line{stroke-dashoffset:0 !important;}
+      .chalk-content h2::after{transform:scaleX(1) !important;}
+      .chalk-content section{opacity:1 !important;}
+    }
+  </style>
+
+  <!-- machine-readable data for optional JS enhancement (rendered by generator) -->
+  <script type="application/json" id="region-data">
+  {"sido":"서울특별시","sigungu":"노원구","org_slug":"kr-seoul-nowon"}
+  </script>
+
+  <header class="chalk-hero">
+    <div class="chalk-eyebrow">서울특별시 · 오늘의 칠판</div>
+    <h1 class="chalk-title">노원구</h1>
+    <svg class="chalk-underline" viewBox="0 0 560 34" aria-hidden="true" preserveAspectRatio="none">
+      <path style="--len:600" d="M12 20 C 120 6, 240 30, 360 16 S 520 8, 548 22"/>
+    </svg>
+    <p class="chalk-subtitle">분필로 꾹꾹 눌러 그린 노원구 이야기</p>
+  </header>
+
+  <div class="chalk-doodles" aria-hidden="true">
+    <figure>
+      <svg viewBox="0 0 60 60"><path class="d1" style="--len:220" d="M10 46 L30 10 L50 46 M18 34 L42 34"/></svg>
+      <figcaption class="doodle-cap">산</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 60 60"><path class="d2" style="--len:200" d="M8 30 C 8 30, 22 12, 30 30 S 52 48, 52 30 M8 30 C 8 30, 22 48, 30 30"/></svg>
+      <figcaption class="doodle-cap">물길</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 60 60"><path class="d3" style="--len:170" d="M12 44 L30 12 L48 44 Z"/><line class="d3" style="--len:60" x1="30" y1="12" x2="30" y2="4"/></svg>
+      <figcaption class="doodle-cap">한 그루</figcaption>
+    </figure>
+  </div>
+
+  <main class="chalk-content">
+          <section id="intro">
         <h2>지역 소개</h2>
         <p>노원구는 불암산과 수락산이 병풍처럼 감싸 안은 서울 동북단의 자치구로, 갈대(蘆)가 무성했던 벌판(原)이라는 옛 지명을 그대로 이름에 새기고 있습니다. 상계·중계·하계·공릉·월계 다섯 개 법정동으로 이루어져 있으며, 1980년대 대규모 택지개발로 조성된 상계 신시가지가 구의 골격을 이룹니다. 서울과학기술대학교와 광운대학교, 서울여자대학교, 삼육대학교 등 여러 대학과 육군사관학교가 몰려 있어 교육과 학문의 색채가 짙은 고장이기도 합니다. 조선 명종의 어머니 문정왕후가 잠든 태릉이 자리해 왕실의 역사가 흐르는 한편, 폐선을 되살린 경춘선숲길과 화랑대 철도공원이 도심 속 산책 명소로 사랑받습니다. 아파트 단지와 산자락 녹지, 하천 산책로가 어우러져 정주형 주거도시의 편안함을 지닌 곳입니다.</p>
       </section>
@@ -255,10 +531,53 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
           <li><a href="https://www.nowon.kr/www/info/info1/info1_05/info1_05_01/info1_05_01_06.jsp" rel="noopener">화랑대역 국가지정문화재 안내 - 노원구청</a> (조회 2026-07-08)</li>
         </ul>
       </section>
-    </div>
-    <footer>
-      <p>이 페이지는 공개 자료를 바탕으로 작성된 노원구 지역 정보 페이지입니다.</p>
-    </footer>
   </main>
+
+  <p class="chalk-signoff">— 칠판 지우기 전에, 노원구를 한 번 더 —</p>
+
+  <script>
+  (function(){
+    var root=document.querySelector('.chalk-root');
+    if(!root) return;
+
+    // measure each drawable path and set its dash length precisely
+    function calibrate(){
+      root.querySelectorAll('.chalk-underline path, .chalk-doodles path, .chalk-doodles line, .chalk-doodles circle').forEach(function(el){
+        try{
+          var L=el.getTotalLength();
+          if(L && isFinite(L)){ el.style.setProperty('--len', Math.ceil(L)); }
+        }catch(e){}
+      });
+    }
+    calibrate();
+
+    // reveal-on-scroll: add .drawn so chalk animations play as sections enter
+    var sections=root.querySelectorAll('.chalk-content section');
+    sections.forEach(function(s,i){ s.style.animationDelay=(i*0.05)+'s'; });
+
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('drawn'); io.unobserve(e.target); }
+        });
+      },{threshold:0.12});
+      // hero + doodles + every section observed individually
+      [root.querySelector('.chalk-hero'), root.querySelector('.chalk-doodles')].forEach(function(el){ if(el){ el.classList.add('chalk-content'); io.observe(el); } });
+      sections.forEach(function(s){ io.observe(s); });
+    } else {
+      // no observer -> just draw everything (progressive fallback)
+      root.classList.add('drawn');
+    }
+    // ensure hero draws immediately even if already in view on load
+    requestAnimationFrame(function(){
+      var hero=root.querySelector('.chalk-hero'), doodles=root.querySelector('.chalk-doodles');
+      var vh=window.innerHeight||800;
+      [hero,doodles].forEach(function(el){
+        if(el){ var r=el.getBoundingClientRect(); if(r.top<vh){ el.classList.add('drawn'); } }
+      });
+    });
+  })();
+  </script>
+</div>
 </body>
 </html>
